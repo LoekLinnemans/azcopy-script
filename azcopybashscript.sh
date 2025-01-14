@@ -5,7 +5,6 @@ AWS_BUCKET_NAME="azurebackupsaws"
 AWS_REGION="us-east-1"
 TEMP_DIR="/tmp/azure_to_aws_backup"
 
-
 if [ $? -ne 0 ]; then
     echo "Failed to authenticate with Azure"
     exit 1
