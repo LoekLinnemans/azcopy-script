@@ -5,6 +5,7 @@ executors:
     docker:
       - image: circleci/python:3.9  # Use an image with both azcopy and aws-cli pre-installed, or install them in the next steps
     working_directory: ~/repo
+
 jobs:
   backup:
     docker:
@@ -38,12 +39,13 @@ jobs:
       - run:
           name: Run Backup Script
           command: |
-            chmod +x ./backup_script.sh
-            ./backup_script.sh
+            chmod +x ./azcopybashscript.sh  # Update this line with your script's filename
+            ./azcopybashscript.sh
       - run:
           name: Clean up
           command: |
             # Add any additional cleanup steps if needed
+
 workflows:
   version: 2
   backup_process:
