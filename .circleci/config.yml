@@ -40,6 +40,8 @@ jobs:
           name: Run Backup Script
           command: |
             chmod +x ./azcopybashscript.sh  # Update this line with your script's filename
+            # Ensure SAS token is passed as an environment variable to your script
+            export AZURE_SAS_TOKEN=$AZURE_SAS_TOKEN
             ./azcopybashscript.sh
       - run:
           name: Clean up

@@ -1,6 +1,6 @@
 AZURE_STORAGE_ACCOUNT="newyorkbackups"
 AZURE_CONTAINER="newyorkbackups"
-AZURE_DESTINATION="https://newyorkbackups.blob.core.windows.net/newyorkbackups?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-01-23T16:18:44Z&st=2025-01-09T08:18:44Z&spr=https&sig=aT1vIbcV87NZtSmM%2Bz8Qgu7KRalt1qZKKtmTPTT9H1U%3D"
+AZURE_DESTINATION="https://newyorkbackups.blob.core.windows.net/newyorkbackups?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-02-07T08:02:36Z&st=2025-01-15T00:02:36Z&spr=https&sig=zMJPvyfn7Cn20YuLklFoQzSSnsTskSUBshGvmfoo1FM%3D"
 AWS_BUCKET_NAME="azurebackupsaws"
 AWS_REGION="us-east-1"
 TEMP_DIR="/tmp/azure_to_aws_backup"
